@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divesh S - Software Engineer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ATS-Optimized Single-Column Stylesheet (Full 1-Page Layout) */
+    :root {
+      --primary-color: #0f2d59;
+      --heading-color: #111827;
+      --text-color: #1f2937;
+      --text-muted: #4b5563;
+      --border-color: #cbd5e1;
+      --accent-hover: #1e40af;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      color: var(--text-color);
+      background-color: #f1f5f9;
+      line-height: 1.45;
+      font-size: 11.35px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Print action bar - visible on screen, hidden when printing */
+    .action-bar {
+      max-width: 850px;
+      margin: 14px auto 10px auto;
+      padding: 10px 18px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    }
+
+    .action-bar-text {
+      font-size: 12.5px;
+      color: #475569;
+    }
+
+    .action-bar-text strong {
+      color: #0f172a;
+    }
+
+    .print-btn {
+      background-color: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 7px 16px;
+      font-size: 12.5px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.2s;
+    }
+
+    .print-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    /* Resume Container (A4 / Standard dimensions) */
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto 24px auto;
+      background: #ffffff;
+      padding: 30px 40px;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      border-bottom: 1.5px solid var(--primary-color);
+      padding-bottom: 7px;
+      margin-bottom: 10px;
+    }
+
+    h1.name {
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3px 12px;
+      font-size: 10.8px;
+      color: var(--text-muted);
+    }
+
+    .contact-info a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    .contact-separator {
+      color: #94a3b8;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 12px;
+    }
+
+    h2.section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary-color);
+      border-bottom: 1.4px solid var(--border-color);
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    p.summary-text {
+      text-align: justify;
+      color: var(--text-color);
+      line-height: 1.45;
+      font-size: 11.35px;
+    }
+
+    /* Skills Grid */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .skill-item {
+      font-size: 11.35px;
+      line-height: 1.42;
+      color: var(--text-color);
+    }
+
+    .skill-item strong {
+      color: var(--heading-color);
+      font-weight: 600;
+    }
+
+    /* Experience */
+    .entry-item {
+      margin-bottom: 6px;
+    }
+
+    .entry-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .entry-title {
+      font-size: 12.2px;
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    .entry-location,
+    .entry-date {
+      font-size: 10.8px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .entry-subheader {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .entry-role {
+      font-size: 11.4px;
+      font-weight: 600;
+      color: var(--primary-color);
+      font-style: normal;
+    }
+
+    /* Subentry for projects under company */
+    .subentry {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .subentry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .subentry-title {
+      font-size: 11.35px;
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    .subentry-tech {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Bullet List */
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 15px;
+      margin-top: 1.5px;
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 3.5px;
+      line-height: 1.42;
+      text-align: justify;
+      font-size: 11.35px;
+    }
+
+    ul.bullet-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    ul.bullet-list strong {
+      color: var(--heading-color);
+      font-weight: 600;
+    }
+
+    /* Education items */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      font-size: 11.35px;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-main {
+      font-size: 11.35px;
+      flex: 1;
+      margin-right: 8px;
+    }
+
+    .edu-degree {
+      font-weight: 600;
+      color: var(--heading-color);
+    }
+
+    .edu-institution {
+      color: var(--text-muted);
+    }
+
+    .edu-meta {
+      font-size: 10.5px;
+      text-align: right;
+      color: var(--text-muted);
+      font-weight: 500;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .edu-score {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    /* Print Optimization Rules - Strict Full 1-Page A4 Guarantee (95%+ Vertical Coverage) */
+    @media print {
+      @page {
+        margin: 8mm 10mm 8mm 10mm;
+        size: A4 portrait;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 11.35px;
+        line-height: 1.45;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-container {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+
+      header {
+        border-bottom: 1.5px solid #000000 !important;
+        padding-bottom: 7px !important;
+        margin-bottom: 10px !important;
+      }
+
+      h1.name {
+        font-size: 23px !important;
+        color: #000000 !important;
+        margin-bottom: 3px !important;
+        letter-spacing: 0.8px !important;
+      }
+
+      .contact-info {
+        font-size: 10.6px !important;
+        gap: 3px 10px !important;
+      }
+
+      section {
+        margin-bottom: 12px !important;
+      }
+
+      h2.section-title {
+        font-size: 12px !important;
+        color: #000000 !important;
+        border-bottom: 1.4px solid #000000 !important;
+        padding-bottom: 2px !important;
+        margin-bottom: 5px !important;
+        letter-spacing: 0.8px !important;
+      }
+
+      p.summary-text {
+        font-size: 11.2px !important;
+        line-height: 1.44 !important;
+      }
+
+      .skills-block {
+        gap: 3.5px !important;
+      }
+
+      .skill-item {
+        font-size: 11.2px !important;
+        line-height: 1.42 !important;
+      }
+
+      .entry-item {
+        margin-bottom: 6px !important;
+      }
+
+      .entry-header {
+        margin-bottom: 1px !important;
+      }
+
+      .entry-title {
+        font-size: 12.2px !important;
+      }
+
+      .entry-role {
+        font-size: 11.4px !important;
+        color: #000000 !important;
+      }
+
+      .subentry {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+      }
+
+      .subentry-title {
+        font-size: 11.2px !important;
+        color: #000000 !important;
+      }
+
+      .subentry-tech {
+        font-size: 10px !important;
+      }
+
+      .entry-location,
+      .entry-date {
+        font-size: 10.5px !important;
+      }
+
+      ul.bullet-list {
+        padding-left: 15px !important;
+        margin-top: 1.5px !important;
+      }
+
+      ul.bullet-list li {
+        margin-bottom: 3.5px !important;
+        line-height: 1.42 !important;
+        font-size: 11.2px !important;
+      }
+
+      .edu-item {
+        margin-bottom: 4px !important;
+        font-size: 11.2px !important;
+      }
+
+      .edu-main {
+        font-size: 11.2px !important;
+      }
+
+      .edu-meta {
+        font-size: 10.2px !important;
+      }
+
+      .edu-score {
+        color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Top Bar for Easy Printing -->
+  <div class="action-bar">
+    <div class="action-bar-text">
+      <strong>ATS-Friendly Single-Page Resume</strong> — Engineered to fill the full 1-page A4 canvas with optimal balance.
+    </div>
+    <button class="print-btn" onclick="window.print()">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- Main Resume Content -->
+  <main class="resume-container">
+
+    <!-- Header Section -->
+    <header>
+      <h1 class="name">Divesh S</h1>
+      <div class="contact-info">
+        <span>Coimbatore, India</span>
+        <span class="contact-separator">•</span>
+        <span>+91 6382184458</span>
+        <span class="contact-separator">•</span>
+        <a href="mailto:diveshs0801@gmail.com">diveshs0801@gmail.com</a>
+        <span class="contact-separator">•</span>
+        <a href="https://linkedin.com/in/divesh-s-57bbaa8236" target="_blank" rel="noopener">linkedin.com/in/divesh-s-57bbaa8236</a>
+        <span class="contact-separator">•</span>
+        <a href="https://github.com/diveshs0801" target="_blank" rel="noopener">github.com/diveshs0801</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Software Engineer with 1+ year of professional experience designing and scaling high-concurrency backend services, distributed systems, and full-stack web platforms using <strong>NestJS</strong>, <strong>Next.js 16 (React 19)</strong>, <strong>Go (Golang)</strong>, and <strong>TypeScript</strong>. Proven track record architecting enterprise production platforms including <strong>TaxiBy</strong> (ride-hailing &amp; fleet mobility), <strong>ProductCRM</strong> (internal CRM scaling to commercial SaaS with MCP AI Copilot), and distributed <strong>Go microservices</strong> with Kafka and gRPC. Experienced delivering end-to-end client applications across custom CMS portals, e-commerce applications, real-time analytics dashboards, and interactive web experiences.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-block">
+        <p class="skill-item"><strong>Programming Languages:</strong> TypeScript, JavaScript (ES6+), Go (Golang), SQL</p>
+        <p class="skill-item"><strong>Backend &amp; Frameworks:</strong> NestJS, Node.js, Express.js, RESTful APIs, WebSockets (Socket.IO), gRPC</p>
+        <p class="skill-item"><strong>Frontend Technologies:</strong> Next.js 16 (App Router), React 19, Tailwind CSS, Zustand, Redux, TanStack Query, HTML5/CSS3</p>
+        <p class="skill-item"><strong>Distributed Systems &amp; Queues:</strong> Microservices Architecture, Apache Kafka, RabbitMQ, BullMQ, Redis (Pub/Sub, Caching, H3), KrakenD Gateway</p>
+        <p class="skill-item"><strong>Databases &amp; ORMs:</strong> PostgreSQL, MySQL, Prisma ORM</p>
+        <p class="skill-item"><strong>Cloud, Tools &amp; Integrations:</strong> Docker, Docker Compose, AWS (EC2, S3), Razorpay, Cashfree Payouts, Interakt (WhatsApp API), Fast2SMS, IVR Integrations, Google Search Console (GSC), Model Context Protocol (MCP) / AI Copilot, Git, GitHub, Linux, Postman</p>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">Webnox Technologies</span>
+          <span class="entry-location">Coimbatore, India</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="entry-role">Software Engineer</span>
+          <span class="entry-date">August 2025 – September 2026</span>
+        </div>
+
+        <!-- TaxiBy -->
+        <div class="subentry">
+          <div class="subentry-header">
+            <span class="subentry-title">TaxiBy — Enterprise Ride-Hailing &amp; Fleet Mobility Platform</span>
+            <span class="subentry-tech">NestJS, Next.js 16, Redis, Uber H3, WebSockets, PostgreSQL, Cashfree</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              Architected high-concurrency <strong>NestJS</strong> microservices (<code>core</code>, <code>tracking</code>, <code>notifications</code>), managing real-time driver telemetry, dynamic surge pricing, and automated dispatch.
+            </li>
+            <li>
+              Engineered sub-second driver dispatch using <strong>Uber’s H3 Hexagonal Spatial Index (Res 7)</strong> and <strong>Redis Sets</strong>, replacing expensive database polygonal queries with <strong>O(1) lookups (&lt;2ms latency)</strong>.
+            </li>
+            <li>
+              Engineered real-time driver GPS telemetry streaming via <strong>WebSockets</strong> and <strong>Redis</strong>, implementing distance-threshold throttling and debouncing to eliminate redundant location pings and reduce network payload by <strong>~75%</strong>.
+            </li>
+            <li>
+              Slashed third-party <strong>Google Maps API overhead by 70–80%</strong> (saving ₹25k–₹35k/month) via coordinate-rounding Redis cache and built an <strong>immutable double-entry wallet ledger</strong> with automated <strong>Cashfree Payouts</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ProductCRM -->
+        <div class="subentry">
+          <div class="subentry-header">
+            <span class="subentry-title">ProductCRM — Enterprise Multi-Tenant CRM &amp; AI Copilot Platform</span>
+            <span class="subentry-tech">NestJS, Next.js, Prisma, PostgreSQL, Docker, DeepSeek LLM, MCP</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              Engineered an enterprise multi-tenant CRM currently powering internal company operations, architecting request-level data isolation via <strong>NestJS</strong> and Node.js <strong><code>AsyncLocalStorage</code></strong> for upcoming commercial SaaS rollout to external customers.
+            </li>
+            <li>
+              Integrated an internal <strong>AI Copilot</strong> powered by <strong>DeepSeek LLM</strong> and a custom <strong>Model Context Protocol (MCP)</strong> tool execution framework, featuring RBAC-aware tool access and 2-phase human write confirmation safeguards.
+            </li>
+            <li>
+              Built an idempotent multi-entity lead conversion and customer onboarding pipeline using <strong>Prisma transactions (<code>$transaction</code>)</strong>, guaranteeing zero duplicate company, contact, or opportunity records during onboarding.
+            </li>
+          </ul>
+        </div>
+
+        <!-- EFS ERP Microservices -->
+        <div class="subentry">
+          <div class="subentry-header">
+            <span class="subentry-title">Enterprise Multi-Tenant ERP Microservices (EFS)</span>
+            <span class="subentry-tech">Go (Golang), Apache Kafka, gRPC, PostgreSQL, Redis, KrakenD, Docker</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              Architected an enterprise multi-tenant ERP platform spanning 11 microservices in <strong>Go (Golang)</strong>, <strong>Apache Kafka</strong>, <strong>gRPC</strong>, and <strong>PostgreSQL</strong>, processing work orders, procurement, and fleet dispatching across isolated tenant domains.
+            </li>
+            <li>
+              Implemented the <strong>Transactional Outbox Pattern</strong> in Go with background workers and exponential backoff retry logic, eliminating dual-write failures and guaranteeing at-least-once delivery across 15+ Kafka domain topics.
+            </li>
+            <li>
+              Engineered an in-memory GPS dispatch &amp; route optimization engine in Go using the <strong>Haversine formula</strong> (&lt;12ms latency) and designed a <strong>KrakenD API Gateway</strong> layer handling <strong>8,000+ req/sec</strong> with sub-5ms proxy overhead.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Client Web Applications -->
+        <div class="subentry">
+          <div class="subentry-header">
+            <span class="subentry-title">Client Web Applications &amp; Production Deliverables</span>
+            <span class="subentry-tech">Next.js 16, React 19, Node.js, WebSockets, Tailwind CSS</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              Delivered 10+ production web applications including custom CMS platforms, high-conversion e-commerce portals with secure payment checkouts (Razorpay, Cashfree), real-time analytics dashboards, and interactive 3D web experiences.
+            </li>
+            <li>
+              Built responsive, SEO-optimized frontends in <strong>Next.js 16</strong> and <strong>React 19</strong> with Tailwind CSS, integrating WhatsApp messaging via <strong>Interakt</strong>, transactional SMS via <strong>Fast2SMS</strong>, and <strong>IVR telematics</strong>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+
+      <div class="edu-item">
+        <div class="edu-main">
+          <span class="edu-degree">B.E., Computer Science and Engineering</span> — 
+          <span class="edu-institution">Sri Shakthi Institute of Engineering and Technology</span>
+        </div>
+        <div class="edu-meta">
+          <span class="edu-score">CGPA: 7.93 / 10</span> | Oct 2021 – Apr 2025
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-main">
+          <span class="edu-degree">Higher Secondary Certificate (Class 12)</span> — 
+          <span class="edu-institution">Sai Vidhya Nikethan Matric Higher Secondary School</span>
+        </div>
+        <div class="edu-meta">
+          <span class="edu-score">Percentage: 93%</span> | Jun 2020 – Mar 2021
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-main">
+          <span class="edu-degree">Secondary School Certificate (Class 10)</span> — 
+          <span class="edu-institution">SRMV Swami Shivananda Higher Secondary School</span>
+        </div>
+        <div class="edu-meta">
+          <span class="edu-score">Percentage: 93.2%</span> | May 2018 – May 2019
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
