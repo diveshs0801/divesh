@@ -1,0 +1,5 @@
+# Sensitive credentials
+service_account.json
+*.key
+*.pem
+node_modules/

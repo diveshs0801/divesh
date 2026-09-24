@@ -1,0 +1,254 @@
+[
+  {
+    "company": "Freshworks",
+    "domain": "SaaS, CRM & Cloud Platforms",
+    "careersUrl": "https://www.freshworks.com/company/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/freshworks-inc/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Freshworks&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Freshworks&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Freshworks&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:32.180Z"
+  },
+  {
+    "company": "Zoho",
+    "domain": "SaaS, CRM & Cloud Platforms",
+    "careersUrl": "https://www.zoho.com/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/zoho/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Zoho&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Zoho&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Zoho&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:34.010Z"
+  },
+  {
+    "company": "Razorpay",
+    "domain": "Fintech & Payments",
+    "careersUrl": "https://razorpay.com/jobs/",
+    "linkedInUrl": "https://www.linkedin.com/company/razorpay/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Razorpay&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Razorpay&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Razorpay&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:35.717Z"
+  },
+  {
+    "company": "PhonePe",
+    "domain": "Fintech & Payments",
+    "careersUrl": "https://www.phonepe.com/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/phonepe-internet/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20PhonePe&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20PhonePe&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=PhonePe&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:37.811Z"
+  },
+  {
+    "company": "Swiggy",
+    "domain": "Mobility, Quick-Commerce & Logistics",
+    "careersUrl": "https://careers.swiggy.com/",
+    "linkedInUrl": "https://www.linkedin.com/company/swiggy/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Swiggy&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Swiggy&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Swiggy&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:39.530Z"
+  },
+  {
+    "company": "Groww",
+    "domain": "Fintech & Payments",
+    "careersUrl": "https://groww.in/careers",
+    "linkedInUrl": "https://www.linkedin.com/company/groww/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Groww&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Groww&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Groww&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:41.219Z"
+  },
+  {
+    "company": "CRED",
+    "domain": "Fintech & Payments",
+    "careersUrl": "https://careers.cred.club/",
+    "linkedInUrl": "https://www.linkedin.com/company/credapp/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20CRED&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20CRED&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=CRED&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:42.921Z"
+  },
+  {
+    "company": "Postman",
+    "domain": "Developer Tools & Infra",
+    "careersUrl": "https://www.postman.com/company/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/postman-platform/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Postman&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Postman&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Postman&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:44.690Z"
+  },
+  {
+    "company": "Chargebee",
+    "domain": "SaaS, CRM & Cloud Platforms",
+    "careersUrl": "https://www.chargebee.com/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/chargebee/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Chargebee&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Chargebee&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Chargebee&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:48.022Z"
+  },
+  {
+    "company": "Juspay",
+    "domain": "Fintech & Payments",
+    "careersUrl": "https://juspay.io/careers",
+    "linkedInUrl": "https://www.linkedin.com/company/juspay/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Juspay&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Juspay&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Juspay&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:49.984Z"
+  },
+  {
+    "company": "Hasura",
+    "domain": "Developer Tools & Infra",
+    "careersUrl": "https://hasura.io/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/hasura/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Hasura&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Hasura&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Hasura&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:51.654Z"
+  },
+  {
+    "company": "SigNoz",
+    "domain": "Developer Tools & Infra",
+    "careersUrl": "https://signoz.io/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/signoz/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20SigNoz&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20SigNoz&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=SigNoz&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:53.597Z"
+  },
+  {
+    "company": "Cashfree Payments",
+    "domain": "Fintech & Payments",
+    "careersUrl": "https://www.cashfree.com/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/cashfree/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Cashfree%20Payments&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Cashfree%20Payments&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Cashfree%20Payments&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:55.879Z"
+  },
+  {
+    "company": "Porter",
+    "domain": "Mobility, Quick-Commerce & Logistics",
+    "careersUrl": "https://porter.in/careers",
+    "linkedInUrl": "https://www.linkedin.com/company/porter-in/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Porter&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Porter&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Porter&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:57.658Z"
+  },
+  {
+    "company": "Kovai.co",
+    "domain": "Developer Tools & Infra",
+    "careersUrl": "https://www.kovai.co/careers",
+    "linkedInUrl": "https://www.linkedin.com/company/kovai-co/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Kovai.co&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Kovai.co&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Kovai.co&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:29:59.421Z"
+  },
+  {
+    "company": "Payoda",
+    "domain": "Regional SaaS & High-Impact Tech (TN/Coimbatore/Chennai)",
+    "careersUrl": "https://www.payoda.com/careers",
+    "linkedInUrl": "https://www.linkedin.com/company/payoda/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Payoda&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Payoda&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Payoda&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:30:03.614Z"
+  },
+  {
+    "company": "Kissflow",
+    "domain": "Regional SaaS & High-Impact Tech (TN/Coimbatore/Chennai)",
+    "careersUrl": "https://kissflow.com/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/kissflow/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Kissflow&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20Kissflow&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=Kissflow&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:30:06.918Z"
+  },
+  {
+    "company": "SurveySparrow",
+    "domain": "Regional SaaS & High-Impact Tech (TN/Coimbatore/Chennai)",
+    "careersUrl": "https://surveysparrow.com/careers/",
+    "linkedInUrl": "https://www.linkedin.com/company/surveysparrow/",
+    "linkedInSearches": {
+      "past24Hours": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20SurveySparrow&location=India&f_TPR=r86400&sortBy=DD",
+      "past7Days": "https://www.linkedin.com/jobs/search/?keywords=(Backend%20OR%20Node.js%20OR%20NestJS%20OR%20Go%20OR%20%22Software%20Engineer%22)%20SurveySparrow&location=India&f_TPR=r604800&sortBy=DD",
+      "companyJobs": "https://www.linkedin.com/jobs/search/?keywords=SurveySparrow&location=India&f_TPR=r604800&sortBy=DD"
+    },
+    "status": "scanned",
+    "openings": [],
+    "checkedAt": "2026-09-24T10:30:09.772Z"
+  }
+]

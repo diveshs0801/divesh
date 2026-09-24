@@ -1,0 +1,856 @@
+[
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "1",
+    "name": "Freshworks",
+    "careers": "https://www.freshworks.com/company/careers/",
+    "linkedin": "https://www.linkedin.com/company/freshworks-inc/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "2",
+    "name": "Zoho",
+    "careers": "https://www.zoho.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/zoho/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "3",
+    "name": "Razorpay",
+    "careers": "https://razorpay.com/jobs/",
+    "linkedin": "https://www.linkedin.com/company/razorpay/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "4",
+    "name": "PhonePe",
+    "careers": "https://www.phonepe.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/phonepe-internet/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "5",
+    "name": "Meesho",
+    "careers": "https://www.meesho.io/jobs",
+    "linkedin": "https://www.linkedin.com/company/meesho/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "6",
+    "name": "Swiggy",
+    "careers": "https://careers.swiggy.com/",
+    "linkedin": "https://www.linkedin.com/company/swiggy/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "7",
+    "name": "Flipkart",
+    "careers": "https://www.flipkartcareers.com/",
+    "linkedin": "https://www.linkedin.com/company/flipkart/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "8",
+    "name": "Myntra",
+    "careers": "https://careers.myntra.com/",
+    "linkedin": "https://www.linkedin.com/company/myntra/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "9",
+    "name": "Groww",
+    "careers": "https://groww.in/careers",
+    "linkedin": "https://www.linkedin.com/company/groww/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "10",
+    "name": "CRED",
+    "careers": "https://careers.cred.club/",
+    "linkedin": "https://www.linkedin.com/company/credapp/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "11",
+    "name": "Zerodha",
+    "careers": "https://zerodha.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/zerodha/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "12",
+    "name": "Dream11",
+    "careers": "https://www.dreamsports.group/careers/",
+    "linkedin": "https://www.linkedin.com/company/dream11/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "13",
+    "name": "BrowserStack",
+    "careers": "https://www.browserstack.com/careers",
+    "linkedin": "https://www.linkedin.com/company/browserstack/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "14",
+    "name": "Postman",
+    "careers": "https://www.postman.com/company/careers/",
+    "linkedin": "https://www.linkedin.com/company/postman-platform/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "15",
+    "name": "Chargebee",
+    "careers": "https://www.chargebee.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/chargebee/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "16",
+    "name": "Darwinbox",
+    "careers": "https://darwinbox.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/darwinbox/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "17",
+    "name": "Ola",
+    "careers": "https://www.olacabs.com/careers",
+    "linkedin": "https://www.linkedin.com/company/olacabs-com/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "18",
+    "name": "Juspay",
+    "careers": "https://juspay.io/careers",
+    "linkedin": "https://www.linkedin.com/company/juspay/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "19",
+    "name": "InMobi",
+    "careers": "https://www.inmobi.com/company/careers/",
+    "linkedin": "https://www.linkedin.com/company/inmobi/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "20",
+    "name": "Mindtickle",
+    "careers": "https://www.mindtickle.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/mindtickle/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "21",
+    "name": "Microsoft",
+    "careers": "https://jobs.careers.microsoft.com/",
+    "linkedin": "https://www.linkedin.com/company/microsoft/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "22",
+    "name": "Amazon",
+    "careers": "https://www.amazon.jobs/",
+    "linkedin": "https://www.linkedin.com/company/amazon/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "23",
+    "name": "Google",
+    "careers": "https://www.google.com/about/careers/",
+    "linkedin": "https://www.linkedin.com/company/google/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "24",
+    "name": "Adobe",
+    "careers": "https://careers.adobe.com/",
+    "linkedin": "https://www.linkedin.com/company/adobe/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "25",
+    "name": "Salesforce",
+    "careers": "https://careers.salesforce.com/",
+    "linkedin": "https://www.linkedin.com/company/salesforce/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "26",
+    "name": "Atlassian",
+    "careers": "https://www.atlassian.com/company/careers",
+    "linkedin": "https://www.linkedin.com/company/atlassian/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "27",
+    "name": "Uber",
+    "careers": "https://www.uber.com/us/en/careers/",
+    "linkedin": "https://www.linkedin.com/company/uber-com/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "28",
+    "name": "Airbnb",
+    "careers": "https://careers.airbnb.com/",
+    "linkedin": "https://www.linkedin.com/company/airbnb/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "29",
+    "name": "Walmart Global Tech",
+    "careers": "https://careers.walmart.com/",
+    "linkedin": "https://www.linkedin.com/company/walmart/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "30",
+    "name": "Oracle",
+    "careers": "https://www.oracle.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/oracle/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "31",
+    "name": "NVIDIA",
+    "careers": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+    "linkedin": "https://www.linkedin.com/company/nvidia/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "32",
+    "name": "ServiceNow",
+    "careers": "https://careers.servicenow.com/",
+    "linkedin": "https://www.linkedin.com/company/servicenow/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "33",
+    "name": "SAP",
+    "careers": "https://www.sap.com/about/careers.html",
+    "linkedin": "https://www.linkedin.com/company/sap/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "34",
+    "name": "Cisco",
+    "careers": "https://jobs.cisco.com/",
+    "linkedin": "https://www.linkedin.com/company/cisco/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "35",
+    "name": "Intuit",
+    "careers": "https://www.intuit.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/intuit/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "36",
+    "name": "PayPal",
+    "careers": "https://www.paypal.com/us/brc/about-paypal/careers",
+    "linkedin": "https://www.linkedin.com/company/paypal/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "37",
+    "name": "LinkedIn",
+    "careers": "https://www.linkedin.com/jobs/",
+    "linkedin": "https://www.linkedin.com/company/linkedin/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "38",
+    "name": "Spotify",
+    "careers": "https://www.lifeatspotify.com/jobs",
+    "linkedin": "https://www.linkedin.com/company/spotify/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "39",
+    "name": "Stripe",
+    "careers": "https://stripe.com/jobs",
+    "linkedin": "https://www.linkedin.com/company/stripe/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "40",
+    "name": "SaaS Labs",
+    "careers": "https://www.saaslabs.co/careers",
+    "linkedin": "https://www.linkedin.com/company/saas-labs/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "41",
+    "name": "Whatfix",
+    "careers": "https://whatfix.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/whatfix/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "42",
+    "name": "Hasura",
+    "careers": "https://hasura.io/careers/",
+    "linkedin": "https://www.linkedin.com/company/hasura/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "43",
+    "name": "Gupshup",
+    "careers": "https://www.gupshup.io/careers",
+    "linkedin": "https://www.linkedin.com/company/gupshup/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "44",
+    "name": "Druva",
+    "careers": "https://www.druva.com/company/careers",
+    "linkedin": "https://www.linkedin.com/company/druva/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "45",
+    "name": "LeadSquared",
+    "careers": "https://www.leadsquared.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/leadsquared/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "46",
+    "name": "Uniphore",
+    "careers": "https://www.uniphore.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/uniphore/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "47",
+    "name": "Yellow.ai",
+    "careers": "https://yellow.ai/careers/",
+    "linkedin": "https://www.linkedin.com/company/yellowdotai/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "48",
+    "name": "Observe.AI",
+    "careers": "https://www.observe.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/observe-ai/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "49",
+    "name": "AiDash",
+    "careers": "https://www.aidash.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/aidash/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "50",
+    "name": "SigNoz",
+    "careers": "https://signoz.io/careers/",
+    "linkedin": "https://www.linkedin.com/company/signoz/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "51",
+    "name": "Cohesity",
+    "careers": "https://www.cohesity.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/cohesity/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "52",
+    "name": "Unacademy",
+    "careers": "https://unacademy.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/unacademy/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "53",
+    "name": "Pine Labs",
+    "careers": "https://www.pinelabs.com/careers",
+    "linkedin": "https://www.linkedin.com/company/pine-labs/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "54",
+    "name": "Cashfree Payments",
+    "careers": "https://www.cashfree.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/cashfree/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "55",
+    "name": "Open Financial Technologies",
+    "careers": "https://open.money/careers/",
+    "linkedin": "https://www.linkedin.com/company/open-financial-technologies/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "56",
+    "name": "Navi",
+    "careers": "https://www.navi.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/navitech/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "57",
+    "name": "OYO",
+    "careers": "https://www.oyorooms.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/oyo-rooms/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "58",
+    "name": "Moglix",
+    "careers": "https://www.moglix.com/careers",
+    "linkedin": "https://www.linkedin.com/company/moglix/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "59",
+    "name": "Porter",
+    "careers": "https://porter.in/careers",
+    "linkedin": "https://www.linkedin.com/company/porter-in/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "60",
+    "name": "Lenskart",
+    "careers": "https://www.lenskart.com/careers",
+    "linkedin": "https://www.linkedin.com/company/lenskart-com/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "61",
+    "name": "Tata 1mg",
+    "careers": "https://www.1mg.com/jobs",
+    "linkedin": "https://www.linkedin.com/company/tata-1mg/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "62",
+    "name": "Nykaa",
+    "careers": "https://www.nykaa.com/careers",
+    "linkedin": "https://www.linkedin.com/company/nykaa/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "63",
+    "name": "BigBasket",
+    "careers": "https://www.bigbasket.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/bigbasket-com/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "64",
+    "name": "Delhivery",
+    "careers": "https://www.delhivery.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/delhivery/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "65",
+    "name": "Sarvam AI",
+    "careers": "https://www.sarvam.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/sarvam-ai/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "66",
+    "name": "Krutrim",
+    "careers": "https://www.krutrim.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/krutrim-ai/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "67",
+    "name": "Glean",
+    "careers": "https://www.glean.com/careers",
+    "linkedin": "https://www.linkedin.com/company/gleanwork/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "68",
+    "name": "DevRev",
+    "careers": "https://devrev.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/devrev/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "69",
+    "name": "M2P Fintech",
+    "careers": "https://m2pfintech.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/m2p-fintech/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "70",
+    "name": "Games24x7",
+    "careers": "https://www.games24x7.com/careers",
+    "linkedin": "https://www.linkedin.com/company/games24x7/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "71",
+    "name": "Acko",
+    "careers": "https://www.acko.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/acko/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "72",
+    "name": "Increff",
+    "careers": "https://www.increff.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/increff/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "73",
+    "name": "smallcase",
+    "careers": "https://www.smallcase.com/careers",
+    "linkedin": "https://www.linkedin.com/company/smallcase/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "74",
+    "name": "Zolve",
+    "careers": "https://www.zolve.com/careers",
+    "linkedin": "https://www.linkedin.com/company/zolve/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "75",
+    "name": "Ather Energy",
+    "careers": "https://www.atherenergy.com/careers",
+    "linkedin": "https://www.linkedin.com/company/ather-energy/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "76",
+    "name": "Atlys",
+    "careers": "https://www.atlys.com/careers",
+    "linkedin": "https://www.linkedin.com/company/atlys/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "77",
+    "name": "Fireflies.ai",
+    "careers": "https://fireflies.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/fireflies-ai/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "78",
+    "name": "ClearFeed",
+    "careers": "https://clearfeed.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/clearfeed/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "79",
+    "name": "Enterpret",
+    "careers": "https://www.enterpret.com/careers",
+    "linkedin": "https://www.linkedin.com/company/enterpret/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "80",
+    "name": "Gnani.ai",
+    "careers": "https://gnani.ai/careers",
+    "linkedin": "https://www.linkedin.com/company/gnani-ai/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "81",
+    "name": "Decentro",
+    "careers": "https://decentro.tech/careers",
+    "linkedin": "https://www.linkedin.com/company/decentro/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "82",
+    "name": "PensionBox",
+    "careers": "https://pensionbox.in/careers",
+    "linkedin": "https://www.linkedin.com/company/pensionbox/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "83",
+    "name": "Twid",
+    "careers": "https://www.twidpay.com/careers",
+    "linkedin": "https://www.linkedin.com/company/twid/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "84",
+    "name": "Twilio",
+    "careers": "https://www.twilio.com/en-us/company/jobs",
+    "linkedin": "https://www.linkedin.com/company/twilio/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "85",
+    "name": "HubSpot",
+    "careers": "https://www.hubspot.com/careers",
+    "linkedin": "https://www.linkedin.com/company/hubspot/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "86",
+    "name": "Cloudflare",
+    "careers": "https://www.cloudflare.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/cloudflare/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "87",
+    "name": "GitLab",
+    "careers": "https://about.gitlab.com/jobs/",
+    "linkedin": "https://www.linkedin.com/company/gitlab-com/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "88",
+    "name": "Datadog",
+    "careers": "https://careers.datadoghq.com/",
+    "linkedin": "https://www.linkedin.com/company/datadog/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "89",
+    "name": "Confluent",
+    "careers": "https://www.confluent.io/careers/",
+    "linkedin": "https://www.linkedin.com/company/confluent/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "90",
+    "name": "Kovai.co",
+    "careers": "https://www.kovai.co/careers",
+    "linkedin": "https://www.linkedin.com/company/kovai-co/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "91",
+    "name": "KovaiSoft",
+    "careers": "https://kovaisoft.in/join-us",
+    "linkedin": "https://www.linkedin.com/company/kovaisoft/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "92",
+    "name": "Incresco",
+    "careers": "https://www.increscotech.com/about/careers/",
+    "linkedin": "https://www.linkedin.com/company/incresco/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "93",
+    "name": "Boolean & Beyond",
+    "careers": "https://www.booleanbeyond.com/careers",
+    "linkedin": "https://www.linkedin.com/company/boolean-and-beyond/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "94",
+    "name": "Kalvium",
+    "careers": "https://kalvium.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/kalvium/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "95",
+    "name": "Cercle X",
+    "careers": "https://www.cerclex.com/",
+    "linkedin": "https://www.linkedin.com/company/cercle-x/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "96",
+    "name": "KGISL",
+    "careers": "https://www.kgisl.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/kgisl/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "97",
+    "name": "Elgi Equipments",
+    "careers": "https://www.elgi.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/elgi-equipments-limited/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "98",
+    "name": "Pricol",
+    "careers": "https://www.pricol.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/pricol/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "99",
+    "name": "Soliton Technologies",
+    "careers": "https://solitontech.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/soliton-technologies/"
+  },
+  {
+    "category": "Core Product / SaaS / Fintech / Consumer (100)",
+    "num": "100",
+    "name": "Aspire Systems",
+    "careers": "https://www.aspiresys.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/aspire-systems/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "1",
+    "name": "Payoda",
+    "careers": "https://www.payoda.com/careers",
+    "linkedin": "https://www.linkedin.com/company/payoda/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "2",
+    "name": "Kissflow",
+    "careers": "https://kissflow.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/kissflow/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "3",
+    "name": "SurveySparrow",
+    "careers": "https://surveysparrow.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/surveysparrow/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "4",
+    "name": "Tiger Analytics",
+    "careers": "https://www.tigeranalytics.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/tiger-analytics/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "5",
+    "name": "LatentView Analytics",
+    "careers": "https://www.latentview.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/latentview-analytics/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "6",
+    "name": "Ramco Systems",
+    "careers": "https://www.ramco.com/careers",
+    "linkedin": "https://www.linkedin.com/company/ramco-systems/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "7",
+    "name": "Prodapt",
+    "careers": "https://www.prodapt.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/prodapt/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "8",
+    "name": "Toast",
+    "careers": "https://careers.toasttab.com/india",
+    "linkedin": "https://www.linkedin.com/company/toast-inc/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "9",
+    "name": "Matrimony.com",
+    "careers": "https://www.matrimony.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/matrimony-com/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "10",
+    "name": "Vymo",
+    "careers": "https://getvymo.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/vymo/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "11",
+    "name": "WayCool",
+    "careers": "https://waycool.in/careers/",
+    "linkedin": "https://www.linkedin.com/company/waycool/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "12",
+    "name": "Detect Technologies",
+    "careers": "https://detecttechnologies.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/detect-technologies/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "13",
+    "name": "Kapture CX",
+    "careers": "https://www.kapturecrm.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/kapturecrm/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "14",
+    "name": "Zuper",
+    "careers": "https://www.zuper.co/careers/",
+    "linkedin": "https://www.linkedin.com/company/zuper/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "15",
+    "name": "Facilio",
+    "careers": "https://facilio.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/facilio/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "16",
+    "name": "Rocketlane",
+    "careers": "https://rocketlane.com/careers",
+    "linkedin": "https://www.linkedin.com/company/rocketlane/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "17",
+    "name": "Relyon Softech",
+    "careers": "https://relyonsoft.com/careers/",
+    "linkedin": "https://www.linkedin.com/company/relyon-softech/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "18",
+    "name": "Codincity",
+    "careers": "https://codincity.com/careers",
+    "linkedin": "https://www.linkedin.com/company/codincity/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "19",
+    "name": "Aptiv",
+    "careers": "https://www.aptiv.com/en/jobs/working-here/global-locations/india",
+    "linkedin": "https://www.linkedin.com/company/aptiv/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "20",
+    "name": "Caterpillar",
+    "careers": "https://careers.caterpillar.com/",
+    "linkedin": "https://www.linkedin.com/company/caterpillar-inc/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "21",
+    "name": "Dover India",
+    "careers": "https://careers.dovercorporation.com/go/Dover-India-Innovation-Center/9068301/",
+    "linkedin": "https://www.linkedin.com/company/dover-corporation/"
+  },
+  {
+    "category": "Regional & High-Impact Tech (22)",
+    "num": "22",
+    "name": "Onwords",
+    "careers": "https://www.onwords.in/careers",
+    "linkedin": "https://www.linkedin.com/company/onwords/"
+  }
+]
