@@ -1,0 +1,27 @@
+{
+  "name": "divesh",
+  "version": "1.0.0",
+  "description": "> **Comprehensive, 360-degree technical interview preparation handbook covering theory, deep internals, production architecture, code implementations, and battle-tested answers from basic to advanced.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diveshs0801/divesh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/diveshs0801/divesh/issues"
+  },
+  "homepage": "https://github.com/diveshs0801/divesh#readme",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cheerio": "^1.2.0",
+    "csv-parser": "^3.2.1",
+    "csv-writer": "^1.6.0"
+  }
+}
