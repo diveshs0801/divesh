@@ -1,0 +1,299 @@
+[
+  {
+    "company": "Branch",
+    "title": "Senior Software Engineer, Platform",
+    "location": "Remote, US",
+    "url": "https://job-boards.greenhouse.io/branch/jobs/7771615003",
+    "source": "Greenhouse ATS",
+    "date": "2026-06-15",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE 2",
+    "location": "Lucknow",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/7956882",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE II - AI",
+    "location": "Bangalore",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/8073988",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE III - Devops",
+    "location": "Bangalore",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/7393433",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE III - Salesforce",
+    "location": "Lucknow",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/7408134",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE II - Salesforce AI",
+    "location": "Lucknow",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/7725385",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE IV - Data Engineer",
+    "location": "Lucknow",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/6919206",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "InMobi",
+    "title": "SDE IV (ML Engineering)",
+    "location": "Lucknow",
+    "url": "https://job-boards.greenhouse.io/inmobi/jobs/8073655",
+    "source": "Greenhouse ATS",
+    "date": "2026-09-24",
+    "type": "Product / Tech Startup"
+  },
+  {
+    "company": "Oowlish Technology",
+    "title": "Full Stack Engineer (Vue + Nest)",
+    "location": "Argentina,  Brazil,  Mexico",
+    "url": "https://jobicy.com/jobs/151493-full-stack-engineer-vue-nest",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-24",
+    "type": "Remote Product"
+  },
+  {
+    "company": "Oowlish Technology",
+    "title": "SDET – Regression Automation Engineer",
+    "location": "Argentina,  Brazil,  Mexico",
+    "url": "https://jobicy.com/jobs/151503-sdet-regression-automation-engineer",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-24",
+    "type": "Remote Product"
+  },
+  {
+    "company": "Oowlish Technology",
+    "title": "Full Stack Web Engineer (Python & React)",
+    "location": "Argentina,  Brazil,  Mexico",
+    "url": "https://jobicy.com/jobs/151496-full-stack-web-engineer-python-react",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-24",
+    "type": "Remote Product"
+  },
+  {
+    "company": "FanDuel",
+    "title": "Software Engineer",
+    "location": "UK",
+    "url": "https://jobicy.com/jobs/151472-software-engineer-8",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-24",
+    "type": "Remote Product"
+  },
+  {
+    "company": "LaunchDarkly",
+    "title": "Backend Engineer, Observability",
+    "location": "USA",
+    "url": "https://jobicy.com/jobs/153974-backend-engineer-observability",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-23",
+    "type": "Remote Product"
+  },
+  {
+    "company": "Monks",
+    "title": "Fullstack Engineer",
+    "location": "Brazil",
+    "url": "https://jobicy.com/jobs/151168-fullstack-engineer",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-23",
+    "type": "Remote Product"
+  },
+  {
+    "company": "Canonical",
+    "title": "Software Engineer - Solutions Engineering",
+    "location": "Anywhere",
+    "url": "https://jobicy.com/jobs/149560-software-engineer-solutions-engineering",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-23",
+    "type": "Remote Product"
+  },
+  {
+    "company": "Canonical",
+    "title": "Python and Kubernetes Software Engineer - Data, Workflows, AI/ML & Analytics",
+    "location": "Anywhere",
+    "url": "https://jobicy.com/jobs/149563-python-and-kubernetes-software-engineer-data-workflows-ai-ml-analytics",
+    "source": "Jobicy Global Remote",
+    "date": "2026-09-23",
+    "type": "Remote Product"
+  },
+  {
+    "company": "mozilla",
+    "title": "Contract Software Engineer - WebCompat Tooling (Dashboards and Reporting), Firefox",
+    "location": "Remote",
+    "url": "https://www.arbeitnow.com/jobs/companies/mozilla/contract-software-engineer-webcompat-tooling-dashboards-and-reporting-firefox-189449",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "mozilla",
+    "title": "Contract Software Engineer - DOM Core Firefox/Gecko",
+    "location": "Remote",
+    "url": "https://www.arbeitnow.com/jobs/companies/mozilla/contract-software-engineer-dom-core-firefox-gecko-445336",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Bowatt",
+    "title": "Full Stack Engineer (Germany-based)",
+    "location": "Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/bowatt/full-stack-engineer-germany-based-426645",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Linro",
+    "title": "Backend Engineer (all genders) - Remote Germany",
+    "location": "Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/linro/backend-engineer-all-genders-remote-germany-313669",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Backend Engineer - Golang",
+    "location": "Dusseldorf, North Rhine-Westphalia, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-dusseldorf-97404",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Backend Engineer - Golang",
+    "location": "Cologne, North Rhine-Westphalia, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-cologne-129603",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Backend Engineer - Golang",
+    "location": "Berlin, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-berlin-77665",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Backend Engineer - Golang",
+    "location": "Dusseldorf, North Rhine-Westphalia, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-dusseldorf-304665",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Backend Engineer - Golang",
+    "location": "Cologne, North Rhine-Westphalia, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-cologne-453284",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Backend Engineer - Golang",
+    "location": "Berlin, Germany",
+    "url": "https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-berlin-137754",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Powerprozesse",
+    "title": "Senior Backend-Entwickler – Agents (100% Remote in Deutschland)",
+    "location": "Worms",
+    "url": "https://www.arbeitnow.com/jobs/companies/powerprozesse/senior-backend-entwickler-agents-100-remote-in-deutschland-worms-52175",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Janestreet",
+    "title": "Software Engineer",
+    "location": "London",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/janestreet/software-engineer-london-128053",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Monzoreferrals",
+    "title": "Senior Backend Engineer",
+    "location": "Cardiff",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/monzoreferrals/senior-backend-engineer-cardiff-308235",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Monzoreferrals",
+    "title": "Backend Engineer III",
+    "location": "Cardiff",
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/monzoreferrals/backend-engineer-iii-cardiff-383240",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "VO2 Group",
+    "title": "[VO2 Brand Experience] - Développeur Fullstack Shopify",
+    "location": "Paris, France",
+    "url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-brand-experience-developpeur-fullstack-shopify-paris-france-23700",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-24",
+    "type": "Product Tech"
+  },
+  {
+    "company": "The Flex",
+    "title": "Senior Software Engineer",
+    "location": "Paris",
+    "url": "https://www.arbeitnow.fr/jobs/companies/the-flex/senior-software-engineer-paris-202243",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-23",
+    "type": "Product Tech"
+  },
+  {
+    "company": "Camunda",
+    "title": "Senior Software Engineer, Kubernetes",
+    "location": "Remote",
+    "url": "https://www.arbeitnow.fr/jobs/companies/camunda/remote-senior-software-engineer-kubernetes-95767",
+    "source": "Arbeitnow Tech Feed",
+    "date": "2026-09-23",
+    "type": "Product Tech"
+  }
+]

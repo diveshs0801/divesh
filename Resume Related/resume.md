@@ -15,7 +15,7 @@ Software Engineer with 1+ year of professional experience designing and scaling 
 - **Frontend Technologies:** Next.js 16 (App Router), React 19, Tailwind CSS, Zustand, Redux, TanStack Query, HTML5/CSS3
 - **Distributed Systems & Queues:** Microservices Architecture, Apache Kafka, RabbitMQ, BullMQ, Redis (Pub/Sub, Caching, H3), KrakenD Gateway
 - **Databases & ORMs:** PostgreSQL, MySQL, Prisma ORM
-- **Cloud, Tools & Integrations:** Docker, Docker Compose, AWS (EC2, S3), Razorpay, Cashfree Payouts, Interakt (WhatsApp API), Fast2SMS, IVR Integrations, Google Search Console (GSC), Model Context Protocol (MCP) / AI Copilot, Git, GitHub, Linux, Postman
+- **Cloud, Tools & Integrations:** Docker, Docker Compose, AWS (EC2, S3), GCP, Razorpay, Cashfree Payouts, Interakt (WhatsApp API), Fast2SMS, IVR Integrations, Model Context Protocol (MCP) / AI Copilot, Git, GitHub, Linux, Postman
 
 ---
 

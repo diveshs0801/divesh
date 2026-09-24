@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Company Follow Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-card: #162032;
+      --border: #1e293b;
+      --border-focus: #3b82f6;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --li-blue: #0a66c2;
+      --li-blue-hover: #004182;
+      --accent: #38bdf8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 2rem 1.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .title-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--li-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .banner-warning {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .banner-warning .icon {
+      font-size: 1.35rem;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 0.15rem;
+    }
+
+    .banner-warning p {
+      font-size: 0.88rem;
+      color: #fde68a;
+      line-height: 1.45;
+    }
+
+    .banner-warning strong {
+      color: #fff;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-value {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .stat-progress {
+      margin-top: 0.75rem;
+      height: 6px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .stat-progress-bar {
+      height: 100%;
+      background: var(--success);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .action-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .batch-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.15rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: var(--li-blue);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #004182;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #1e293b;
+      color: #cbd5e1;
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: #334155;
+      color: #fff;
+    }
+
+    .btn-outline-danger {
+      background: transparent;
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      margin-left: auto;
+    }
+
+    .btn-outline-danger:hover {
+      background: rgba(239, 68, 68, 0.1);
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 240px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      background: #0b0f19;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.85rem 0.6rem 2.2rem;
+      color: #fff;
+      font-size: 0.88rem;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .select-filter {
+      background: #0b0f19;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.85rem;
+      color: #fff;
+      font-size: 0.88rem;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .select-filter:focus {
+      border-color: var(--border-focus);
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1rem;
+    }
+
+    .company-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .company-card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px -10px rgba(0,0,0,0.5);
+    }
+
+    .company-card.is-followed {
+      opacity: 0.75;
+      background: rgba(16, 185, 129, 0.05);
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .company-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      background: rgba(255,255,255,0.05);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .company-details {
+      flex: 1;
+    }
+
+    .company-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+
+    .badge-cat {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #7dd3fc;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .btn-sm {
+      padding: 0.45rem 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .check-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: #0b0f19;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+      margin-left: auto;
+    }
+
+    .check-btn.active {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      font-weight: 600;
+    }
+
+    .badge-followed {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #10b981;
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1.25rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: none;
+      font-size: 0.9rem;
+      z-index: 1000;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="title-group">
+          <div class="icon-box">in</div>
+          <div>
+            <h1>LinkedIn Company Follow Assistant</h1>
+            <p class="subtitle">Safely follow all 122 target product & tech companies from your personal account</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner-warning">
+      <div class="icon">⚠️</div>
+      <div>
+        <p><strong>Account Safety Notice:</strong> LinkedIn strictly prohibits automated bots and web scrapers from interacting with accounts. Running headless bot scripts to follow accounts in bulk triggers rate limits, security checkpoints, and <strong>permanent account bans</strong>. Using this dashboard opens pages in your own signed-in browser so you can hit <strong>"+ Follow"</strong> with 100% safety. <em>Recommended limit: 15–20 companies per day.</em></p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Total Target Companies</div>
+        <div class="stat-value" id="totalCount">122</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Followed So Far</div>
+        <div class="stat-value" id="followedCount" style="color: #10b981;">0</div>
+        <div class="stat-progress">
+          <div class="stat-progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Pending Companies</div>
+        <div class="stat-value" id="pendingCount" style="color: #f59e0b;">122</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Daily Safe Target</div>
+        <div class="stat-value" id="todayTarget">15 - 20</div>
+      </div>
+    </div>
+
+    <!-- Action & Filters Panel -->
+    <div class="action-panel">
+      <div class="batch-actions">
+        <button class="btn btn-primary" id="btnOpen5" onclick="openBatch(5)">
+          🚀 Open Next 5 in New Tabs
+        </button>
+        <button class="btn btn-secondary" id="btnOpen10" onclick="openBatch(10)">
+          📂 Open Next 10 in New Tabs
+        </button>
+        <button class="btn btn-outline-danger" onclick="resetProgress()">
+          ↺ Reset Progress
+        </button>
+      </div>
+
+      <div class="filter-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search company (e.g., Razorpay, Swiggy, Zoho)..." oninput="render()">
+        </div>
+
+        <select id="categoryFilter" class="select-filter" onchange="render()">
+          <option value="ALL">All Categories (122)</option>
+          <option value="Core Product / SaaS / Fintech / Consumer (100)">Core Product / SaaS / Fintech (100)</option>
+          <option value="Regional & High-Impact Tech (22)">Regional & High-Impact Tech (22)</option>
+        </select>
+
+        <select id="statusFilter" class="select-filter" onchange="render()">
+          <option value="ALL">All Statuses</option>
+          <option value="PENDING" selected>Pending Only</option>
+          <option value="FOLLOWED">Followed</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Company Grid -->
+    <div class="company-grid" id="companyGrid"></div>
+  </div>
+
+  <div id="toast"></div>
+
+  <script>
+    const COMPANIES = [{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"1","name":"Freshworks","careers":"https://www.freshworks.com/company/careers/","linkedin":"https://www.linkedin.com/company/freshworks-inc/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"2","name":"Zoho","careers":"https://www.zoho.com/careers/","linkedin":"https://www.linkedin.com/company/zoho/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"3","name":"Razorpay","careers":"https://razorpay.com/jobs/","linkedin":"https://www.linkedin.com/company/razorpay/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"4","name":"PhonePe","careers":"https://www.phonepe.com/careers/","linkedin":"https://www.linkedin.com/company/phonepe-internet/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"5","name":"Meesho","careers":"https://www.meesho.io/jobs","linkedin":"https://www.linkedin.com/company/meesho/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"6","name":"Swiggy","careers":"https://careers.swiggy.com/","linkedin":"https://www.linkedin.com/company/swiggy/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"7","name":"Flipkart","careers":"https://www.flipkartcareers.com/","linkedin":"https://www.linkedin.com/company/flipkart/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"8","name":"Myntra","careers":"https://careers.myntra.com/","linkedin":"https://www.linkedin.com/company/myntra/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"9","name":"Groww","careers":"https://groww.in/careers","linkedin":"https://www.linkedin.com/company/groww/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"10","name":"CRED","careers":"https://careers.cred.club/","linkedin":"https://www.linkedin.com/company/credapp/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"11","name":"Zerodha","careers":"https://zerodha.com/careers/","linkedin":"https://www.linkedin.com/company/zerodha/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"12","name":"Dream11","careers":"https://www.dreamsports.group/careers/","linkedin":"https://www.linkedin.com/company/dream11/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"13","name":"BrowserStack","careers":"https://www.browserstack.com/careers","linkedin":"https://www.linkedin.com/company/browserstack/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"14","name":"Postman","careers":"https://www.postman.com/company/careers/","linkedin":"https://www.linkedin.com/company/postman-platform/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"15","name":"Chargebee","careers":"https://www.chargebee.com/careers/","linkedin":"https://www.linkedin.com/company/chargebee/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"16","name":"Darwinbox","careers":"https://darwinbox.com/careers/","linkedin":"https://www.linkedin.com/company/darwinbox/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"17","name":"Ola","careers":"https://www.olacabs.com/careers","linkedin":"https://www.linkedin.com/company/olacabs-com/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"18","name":"Juspay","careers":"https://juspay.io/careers","linkedin":"https://www.linkedin.com/company/juspay/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"19","name":"InMobi","careers":"https://www.inmobi.com/company/careers/","linkedin":"https://www.linkedin.com/company/inmobi/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"20","name":"Mindtickle","careers":"https://www.mindtickle.com/careers/","linkedin":"https://www.linkedin.com/company/mindtickle/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"21","name":"Microsoft","careers":"https://jobs.careers.microsoft.com/","linkedin":"https://www.linkedin.com/company/microsoft/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"22","name":"Amazon","careers":"https://www.amazon.jobs/","linkedin":"https://www.linkedin.com/company/amazon/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"23","name":"Google","careers":"https://www.google.com/about/careers/","linkedin":"https://www.linkedin.com/company/google/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"24","name":"Adobe","careers":"https://careers.adobe.com/","linkedin":"https://www.linkedin.com/company/adobe/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"25","name":"Salesforce","careers":"https://careers.salesforce.com/","linkedin":"https://www.linkedin.com/company/salesforce/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"26","name":"Atlassian","careers":"https://www.atlassian.com/company/careers","linkedin":"https://www.linkedin.com/company/atlassian/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"27","name":"Uber","careers":"https://www.uber.com/us/en/careers/","linkedin":"https://www.linkedin.com/company/uber-com/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"28","name":"Airbnb","careers":"https://careers.airbnb.com/","linkedin":"https://www.linkedin.com/company/airbnb/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"29","name":"Walmart Global Tech","careers":"https://careers.walmart.com/","linkedin":"https://www.linkedin.com/company/walmart/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"30","name":"Oracle","careers":"https://www.oracle.com/careers/","linkedin":"https://www.linkedin.com/company/oracle/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"31","name":"NVIDIA","careers":"https://www.nvidia.com/en-us/about-nvidia/careers/","linkedin":"https://www.linkedin.com/company/nvidia/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"32","name":"ServiceNow","careers":"https://careers.servicenow.com/","linkedin":"https://www.linkedin.com/company/servicenow/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"33","name":"SAP","careers":"https://www.sap.com/about/careers.html","linkedin":"https://www.linkedin.com/company/sap/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"34","name":"Cisco","careers":"https://jobs.cisco.com/","linkedin":"https://www.linkedin.com/company/cisco/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"35","name":"Intuit","careers":"https://www.intuit.com/careers/","linkedin":"https://www.linkedin.com/company/intuit/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"36","name":"PayPal","careers":"https://www.paypal.com/us/brc/about-paypal/careers","linkedin":"https://www.linkedin.com/company/paypal/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"37","name":"LinkedIn","careers":"https://www.linkedin.com/jobs/","linkedin":"https://www.linkedin.com/company/linkedin/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"38","name":"Spotify","careers":"https://www.lifeatspotify.com/jobs","linkedin":"https://www.linkedin.com/company/spotify/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"39","name":"Stripe","careers":"https://stripe.com/jobs","linkedin":"https://www.linkedin.com/company/stripe/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"40","name":"SaaS Labs","careers":"https://www.saaslabs.co/careers","linkedin":"https://www.linkedin.com/company/saas-labs/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"41","name":"Whatfix","careers":"https://whatfix.com/careers/","linkedin":"https://www.linkedin.com/company/whatfix/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"42","name":"Hasura","careers":"https://hasura.io/careers/","linkedin":"https://www.linkedin.com/company/hasura/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"43","name":"Gupshup","careers":"https://www.gupshup.io/careers","linkedin":"https://www.linkedin.com/company/gupshup/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"44","name":"Druva","careers":"https://www.druva.com/company/careers","linkedin":"https://www.linkedin.com/company/druva/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"45","name":"LeadSquared","careers":"https://www.leadsquared.com/careers/","linkedin":"https://www.linkedin.com/company/leadsquared/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"46","name":"Uniphore","careers":"https://www.uniphore.com/careers/","linkedin":"https://www.linkedin.com/company/uniphore/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"47","name":"Yellow.ai","careers":"https://yellow.ai/careers/","linkedin":"https://www.linkedin.com/company/yellowdotai/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"48","name":"Observe.AI","careers":"https://www.observe.ai/careers","linkedin":"https://www.linkedin.com/company/observe-ai/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"49","name":"AiDash","careers":"https://www.aidash.com/careers/","linkedin":"https://www.linkedin.com/company/aidash/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"50","name":"SigNoz","careers":"https://signoz.io/careers/","linkedin":"https://www.linkedin.com/company/signoz/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"51","name":"Cohesity","careers":"https://www.cohesity.com/careers/","linkedin":"https://www.linkedin.com/company/cohesity/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"52","name":"Unacademy","careers":"https://unacademy.com/careers/","linkedin":"https://www.linkedin.com/company/unacademy/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"53","name":"Pine Labs","careers":"https://www.pinelabs.com/careers","linkedin":"https://www.linkedin.com/company/pine-labs/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"54","name":"Cashfree Payments","careers":"https://www.cashfree.com/careers/","linkedin":"https://www.linkedin.com/company/cashfree/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"55","name":"Open Financial Technologies","careers":"https://open.money/careers/","linkedin":"https://www.linkedin.com/company/open-financial-technologies/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"56","name":"Navi","careers":"https://www.navi.com/careers/","linkedin":"https://www.linkedin.com/company/navitech/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"57","name":"OYO","careers":"https://www.oyorooms.com/careers/","linkedin":"https://www.linkedin.com/company/oyo-rooms/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"58","name":"Moglix","careers":"https://www.moglix.com/careers","linkedin":"https://www.linkedin.com/company/moglix/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"59","name":"Porter","careers":"https://porter.in/careers","linkedin":"https://www.linkedin.com/company/porter-in/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"60","name":"Lenskart","careers":"https://www.lenskart.com/careers","linkedin":"https://www.linkedin.com/company/lenskart-com/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"61","name":"Tata 1mg","careers":"https://www.1mg.com/jobs","linkedin":"https://www.linkedin.com/company/tata-1mg/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"62","name":"Nykaa","careers":"https://www.nykaa.com/careers","linkedin":"https://www.linkedin.com/company/nykaa/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"63","name":"BigBasket","careers":"https://www.bigbasket.com/careers/","linkedin":"https://www.linkedin.com/company/bigbasket-com/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"64","name":"Delhivery","careers":"https://www.delhivery.com/careers/","linkedin":"https://www.linkedin.com/company/delhivery/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"65","name":"Sarvam AI","careers":"https://www.sarvam.ai/careers","linkedin":"https://www.linkedin.com/company/sarvam-ai/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"66","name":"Krutrim","careers":"https://www.krutrim.ai/careers","linkedin":"https://www.linkedin.com/company/krutrim-ai/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"67","name":"Glean","careers":"https://www.glean.com/careers","linkedin":"https://www.linkedin.com/company/gleanwork/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"68","name":"DevRev","careers":"https://devrev.ai/careers","linkedin":"https://www.linkedin.com/company/devrev/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"69","name":"M2P Fintech","careers":"https://m2pfintech.com/careers/","linkedin":"https://www.linkedin.com/company/m2p-fintech/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"70","name":"Games24x7","careers":"https://www.games24x7.com/careers","linkedin":"https://www.linkedin.com/company/games24x7/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"71","name":"Acko","careers":"https://www.acko.com/careers/","linkedin":"https://www.linkedin.com/company/acko/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"72","name":"Increff","careers":"https://www.increff.com/careers/","linkedin":"https://www.linkedin.com/company/increff/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"73","name":"smallcase","careers":"https://www.smallcase.com/careers","linkedin":"https://www.linkedin.com/company/smallcase/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"74","name":"Zolve","careers":"https://www.zolve.com/careers","linkedin":"https://www.linkedin.com/company/zolve/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"75","name":"Ather Energy","careers":"https://www.atherenergy.com/careers","linkedin":"https://www.linkedin.com/company/ather-energy/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"76","name":"Atlys","careers":"https://www.atlys.com/careers","linkedin":"https://www.linkedin.com/company/atlys/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"77","name":"Fireflies.ai","careers":"https://fireflies.ai/careers","linkedin":"https://www.linkedin.com/company/fireflies-ai/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"78","name":"ClearFeed","careers":"https://clearfeed.ai/careers","linkedin":"https://www.linkedin.com/company/clearfeed/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"79","name":"Enterpret","careers":"https://www.enterpret.com/careers","linkedin":"https://www.linkedin.com/company/enterpret/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"80","name":"Gnani.ai","careers":"https://gnani.ai/careers","linkedin":"https://www.linkedin.com/company/gnani-ai/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"81","name":"Decentro","careers":"https://decentro.tech/careers","linkedin":"https://www.linkedin.com/company/decentro/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"82","name":"PensionBox","careers":"https://pensionbox.in/careers","linkedin":"https://www.linkedin.com/company/pensionbox/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"83","name":"Twid","careers":"https://www.twidpay.com/careers","linkedin":"https://www.linkedin.com/company/twid/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"84","name":"Twilio","careers":"https://www.twilio.com/en-us/company/jobs","linkedin":"https://www.linkedin.com/company/twilio/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"85","name":"HubSpot","careers":"https://www.hubspot.com/careers","linkedin":"https://www.linkedin.com/company/hubspot/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"86","name":"Cloudflare","careers":"https://www.cloudflare.com/careers/","linkedin":"https://www.linkedin.com/company/cloudflare/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"87","name":"GitLab","careers":"https://about.gitlab.com/jobs/","linkedin":"https://www.linkedin.com/company/gitlab-com/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"88","name":"Datadog","careers":"https://careers.datadoghq.com/","linkedin":"https://www.linkedin.com/company/datadog/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"89","name":"Confluent","careers":"https://www.confluent.io/careers/","linkedin":"https://www.linkedin.com/company/confluent/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"90","name":"Kovai.co","careers":"https://www.kovai.co/careers","linkedin":"https://www.linkedin.com/company/kovai-co/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"91","name":"KovaiSoft","careers":"https://kovaisoft.in/join-us","linkedin":"https://www.linkedin.com/company/kovaisoft/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"92","name":"Incresco","careers":"https://www.increscotech.com/about/careers/","linkedin":"https://www.linkedin.com/company/incresco/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"93","name":"Boolean & Beyond","careers":"https://www.booleanbeyond.com/careers","linkedin":"https://www.linkedin.com/company/boolean-and-beyond/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"94","name":"Kalvium","careers":"https://kalvium.com/careers/","linkedin":"https://www.linkedin.com/company/kalvium/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"95","name":"Cercle X","careers":"https://www.cerclex.com/","linkedin":"https://www.linkedin.com/company/cercle-x/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"96","name":"KGISL","careers":"https://www.kgisl.com/careers/","linkedin":"https://www.linkedin.com/company/kgisl/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"97","name":"Elgi Equipments","careers":"https://www.elgi.com/careers/","linkedin":"https://www.linkedin.com/company/elgi-equipments-limited/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"98","name":"Pricol","careers":"https://www.pricol.com/careers/","linkedin":"https://www.linkedin.com/company/pricol/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"99","name":"Soliton Technologies","careers":"https://solitontech.com/careers/","linkedin":"https://www.linkedin.com/company/soliton-technologies/"},{"category":"Core Product / SaaS / Fintech / Consumer (100)","num":"100","name":"Aspire Systems","careers":"https://www.aspiresys.com/careers/","linkedin":"https://www.linkedin.com/company/aspire-systems/"},{"category":"Regional & High-Impact Tech (22)","num":"1","name":"Payoda","careers":"https://www.payoda.com/careers","linkedin":"https://www.linkedin.com/company/payoda/"},{"category":"Regional & High-Impact Tech (22)","num":"2","name":"Kissflow","careers":"https://kissflow.com/careers/","linkedin":"https://www.linkedin.com/company/kissflow/"},{"category":"Regional & High-Impact Tech (22)","num":"3","name":"SurveySparrow","careers":"https://surveysparrow.com/careers/","linkedin":"https://www.linkedin.com/company/surveysparrow/"},{"category":"Regional & High-Impact Tech (22)","num":"4","name":"Tiger Analytics","careers":"https://www.tigeranalytics.com/careers/","linkedin":"https://www.linkedin.com/company/tiger-analytics/"},{"category":"Regional & High-Impact Tech (22)","num":"5","name":"LatentView Analytics","careers":"https://www.latentview.com/careers/","linkedin":"https://www.linkedin.com/company/latentview-analytics/"},{"category":"Regional & High-Impact Tech (22)","num":"6","name":"Ramco Systems","careers":"https://www.ramco.com/careers","linkedin":"https://www.linkedin.com/company/ramco-systems/"},{"category":"Regional & High-Impact Tech (22)","num":"7","name":"Prodapt","careers":"https://www.prodapt.com/careers/","linkedin":"https://www.linkedin.com/company/prodapt/"},{"category":"Regional & High-Impact Tech (22)","num":"8","name":"Toast","careers":"https://careers.toasttab.com/india","linkedin":"https://www.linkedin.com/company/toast-inc/"},{"category":"Regional & High-Impact Tech (22)","num":"9","name":"Matrimony.com","careers":"https://www.matrimony.com/careers/","linkedin":"https://www.linkedin.com/company/matrimony-com/"},{"category":"Regional & High-Impact Tech (22)","num":"10","name":"Vymo","careers":"https://getvymo.com/careers/","linkedin":"https://www.linkedin.com/company/vymo/"},{"category":"Regional & High-Impact Tech (22)","num":"11","name":"WayCool","careers":"https://waycool.in/careers/","linkedin":"https://www.linkedin.com/company/waycool/"},{"category":"Regional & High-Impact Tech (22)","num":"12","name":"Detect Technologies","careers":"https://detecttechnologies.com/careers/","linkedin":"https://www.linkedin.com/company/detect-technologies/"},{"category":"Regional & High-Impact Tech (22)","num":"13","name":"Kapture CX","careers":"https://www.kapturecrm.com/careers/","linkedin":"https://www.linkedin.com/company/kapturecrm/"},{"category":"Regional & High-Impact Tech (22)","num":"14","name":"Zuper","careers":"https://www.zuper.co/careers/","linkedin":"https://www.linkedin.com/company/zuper/"},{"category":"Regional & High-Impact Tech (22)","num":"15","name":"Facilio","careers":"https://facilio.com/careers/","linkedin":"https://www.linkedin.com/company/facilio/"},{"category":"Regional & High-Impact Tech (22)","num":"16","name":"Rocketlane","careers":"https://rocketlane.com/careers","linkedin":"https://www.linkedin.com/company/rocketlane/"},{"category":"Regional & High-Impact Tech (22)","num":"17","name":"Relyon Softech","careers":"https://relyonsoft.com/careers/","linkedin":"https://www.linkedin.com/company/relyon-softech/"},{"category":"Regional & High-Impact Tech (22)","num":"18","name":"Codincity","careers":"https://codincity.com/careers","linkedin":"https://www.linkedin.com/company/codincity/"},{"category":"Regional & High-Impact Tech (22)","num":"19","name":"Aptiv","careers":"https://www.aptiv.com/en/jobs/working-here/global-locations/india","linkedin":"https://www.linkedin.com/company/aptiv/"},{"category":"Regional & High-Impact Tech (22)","num":"20","name":"Caterpillar","careers":"https://careers.caterpillar.com/","linkedin":"https://www.linkedin.com/company/caterpillar-inc/"},{"category":"Regional & High-Impact Tech (22)","num":"21","name":"Dover India","careers":"https://careers.dovercorporation.com/go/Dover-India-Innovation-Center/9068301/","linkedin":"https://www.linkedin.com/company/dover-corporation/"},{"category":"Regional & High-Impact Tech (22)","num":"22","name":"Onwords","careers":"https://www.onwords.in/careers","linkedin":"https://www.linkedin.com/company/onwords/"}];
+
+    const STORAGE_KEY = 'divesh_followed_companies_v1';
+
+    function getFollowedMap() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveFollowedMap(map) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
+    }
+
+    function toggleFollow(name) {
+      const map = getFollowedMap();
+      if (map[name]) {
+        delete map[name];
+        showToast('Marked ' + name + ' as pending');
+      } else {
+        map[name] = new Date().toISOString();
+        showToast('Marked ' + name + ' as followed! 🎉');
+      }
+      saveFollowedMap(map);
+      render();
+    }
+
+    function openAndMark(url, name) {
+      window.open(url, '_blank');
+      const map = getFollowedMap();
+      if (!map[name]) {
+        map[name] = new Date().toISOString();
+        saveFollowedMap(map);
+      }
+      render();
+    }
+
+    function openBatch(count) {
+      const map = getFollowedMap();
+      const pending = COMPANIES.filter(c => !map[c.name]);
+
+      if (pending.length === 0) {
+        alert('All companies are already marked as followed!');
+        return;
+      }
+
+      const toOpen = pending.slice(0, count);
+
+      let opened = 0;
+      toOpen.forEach((c, index) => {
+        setTimeout(() => {
+          window.open(c.linkedin, '_blank');
+        }, index * 250);
+        map[c.name] = new Date().toISOString();
+        opened++;
+      });
+
+      saveFollowedMap(map);
+      render();
+      showToast('Opened ' + opened + ' tabs! Check tabs and click Follow.');
+    }
+
+    function resetProgress() {
+      if (confirm('Are you sure you want to reset your followed companies progress?')) {
+        localStorage.removeItem(STORAGE_KEY);
+        render();
+        showToast('Progress reset!');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 3000);
+    }
+
+    function render() {
+      const map = getFollowedMap();
+      const followedCount = Object.keys(map).length;
+      const total = COMPANIES.length;
+      const pendingCount = total - followedCount;
+
+      document.getElementById('totalCount').innerText = total;
+      document.getElementById('followedCount').innerText = followedCount;
+      document.getElementById('pendingCount').innerText = pendingCount;
+      
+      const pct = Math.round((followedCount / total) * 100);
+      document.getElementById('progressBar').style.width = pct + '%';
+
+      const searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+      const catVal = document.getElementById('categoryFilter').value;
+      const statusVal = document.getElementById('statusFilter').value;
+
+      const filtered = COMPANIES.filter(c => {
+        const matchesSearch = c.name.toLowerCase().includes(searchVal);
+        const matchesCat = (catVal === 'ALL' || c.category === catVal);
+        const isFollowed = !!map[c.name];
+        const matchesStatus = (
+          statusVal === 'ALL' ||
+          (statusVal === 'FOLLOWED' && isFollowed) ||
+          (statusVal === 'PENDING' && !isFollowed)
+        );
+        return matchesSearch && matchesCat && matchesStatus;
+      });
+
+      const grid = document.getElementById('companyGrid');
+      grid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--text-muted);">No companies match your filters.</div>';
+        return;
+      }
+
+      filtered.forEach(c => {
+        const isFollowed = !!map[c.name];
+        const card = document.createElement('div');
+        card.className = 'company-card ' + (isFollowed ? 'is-followed' : '');
+
+        card.innerHTML = `
+          ${isFollowed ? '<span class="badge-followed">Followed</span>' : ''}
+          <div class="card-top">
+            <span class="company-num">#${c.num}</span>
+            <div class="company-details">
+              <div class="company-name">${c.name}</div>
+              <span class="badge-cat">${c.category.includes('Regional') ? 'Regional Tech' : 'Core Product / SaaS'}</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="${c.linkedin}" target="_blank" class="btn btn-primary btn-sm" onclick="openAndMark('${c.linkedin}', '${c.name}')">
+              🔗 LinkedIn
+            </a>
+            ${c.careers ? `<a href="${c.careers}" target="_blank" class="btn btn-secondary btn-sm">Careers</a>` : ''}
+            <button class="check-btn ${isFollowed ? 'active' : ''}" onclick="toggleFollow('${c.name}')">
+              ${isFollowed ? '✓ Followed' : '○ Mark Followed'}
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    render();
+  </script>
+</body>
+</html>

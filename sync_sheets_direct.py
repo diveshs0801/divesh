@@ -9,12 +9,12 @@ Usage:
   python3 sync_sheets_direct.py stats
 """
 
-import sys, json, urllib.request, urllib.parse
+import sys, json, urllib.request, urllib.parse, os
 from google.oauth2 import service_account
 import google.auth.transport.requests
 
 SPREADSHEET_ID = '1xlZaeXGR9gNizceCRqLUXazImRNukfjXc1_kZC1d7z0'
-KEY_PATH = '/home/webnox/Downloads/divesh/service_account.json'
+KEY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'service_account.json')
 SHEET_NAME = 'Job_Application_Tracker'
 
 def get_auth_token():
