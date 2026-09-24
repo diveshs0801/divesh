@@ -188,6 +188,7 @@ function formatCurrentSheet() {
     19: 130, // Salary Monthly
     20: 100, // Salary LPA
     21: 160, // Location
+    
     22: 100, // Work Mode
     23: 130, // Priority
     24: 120  // Template ID
