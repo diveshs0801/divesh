@@ -17,6 +17,7 @@ Software Development Engineer (SDE) experienced in building enterprise SaaS plat
 - **Databases & Caching:** PostgreSQL, Redis (Spatial GEO, Caching), PostGIS, Prisma ORM v6, GORM
 - **System Design & Architecture:** System Design (HLD/LLD), Microservices Architecture, Event-Driven Architecture, CQRS, Apache Kafka, RabbitMQ, KrakenD Gateway, Transactional Outbox
 - **DevOps & Cloud:** Docker, MinIO S3 Object Storage, Git, GitHub, Linux, Sharp, Razorpay Payments API, OAuth2
+- **AI & MCP:** Generative AI, Prompt Engineering, AI-Powered Development Workflows, Model Context Protocol (MCP), MCP Server Integration, AI Agent Tooling, LLM API Integration
 
 ---
 

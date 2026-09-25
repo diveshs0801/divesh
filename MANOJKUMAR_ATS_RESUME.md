@@ -18,6 +18,7 @@ Results-driven Software Development Engineer (SDE) with hands-on experience desi
 - **System Design & Distributed Architecture:** System Design (HLD/LLD), Microservices Architecture, Event-Driven Architecture, CQRS, Apache Kafka, RabbitMQ, KrakenD API Gateway, Transactional Outbox Pattern, Hexagonal (Ports & Adapters)
 - **DevOps, Storage & Cloud:** Docker, MinIO S3 Object Storage, Git, GitHub, Linux, NPM, Sharp Image Processing, CI/CD
 - **Security & Integrations:** Razorpay Payments & HMAC-SHA256 Webhook Verification, OAuth 2.0 / Google Calendar API, JWT (Refresh Token Rotation), RBAC, FIDO2/WebAuthn
+- **AI & MCP:** Generative AI, Prompt Engineering, AI-Powered Development Workflows, Model Context Protocol (MCP), MCP Server Integration, AI Agent Tooling, LLM API Integration
 
 ---
 
